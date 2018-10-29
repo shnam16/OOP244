@@ -1,0 +1,10 @@
+
+In line number 2 of your output:
+The output should be:
+Welcome to SeneGraph
+But your output is: 
+[shnam@mtrx-node03pd in_lab]$ ws
+^
+|
+Professor's character ASCII code: hex(57), dec(87)
+un-matched character ASCII code: hex(5b), dec(91)

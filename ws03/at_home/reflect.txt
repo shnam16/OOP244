@@ -1,0 +1,24 @@
+1. How many elements are there in each C-style character string that stores a family or given name for the acoount? Why?
+-4. Because the max year is stored by 4. It can only accept the account of four years.
+2. Your class declares two member functions named set(...). In C, this would generate an error. Name the feature of C++ that allows this.
+- This feature is overloading. We can make many functions which have same name, but in the function's parameters have to be different.
+3. What have you learned in completing this workshop?
+- I have learned making the overloading, creating a class, and how to set precised.
+
+Quiz 2 Reflection
+1. What is the benefit of using dynamic memory allocation?
+Wrong answer: We can allocate and deallocate the memory dynamically.
+Correct answer: It is more efficient because we can allocate memory only when we need it and deallocate it when we don't need it.
+2. What does a C++ reference parameter do?
+Wrong answer: type Kingdom *a
+Correct answer: It is the parameter that has the address of object.
+3. Write down a piece of C++ code that a) allocates memory, b) stores the string "OOP244" and deallocates the memory storage.
+Wrong answer: student * Student  = nullptr;
+Student = new Student[];
+strcpy(*Student, "OOP244");
+delete[] student;
+Student = nullptr;
+Correct answer: char* course = nullptr;
+course = new char[6+1];
+strcpy(course, "OOP244");
+delete[] course;

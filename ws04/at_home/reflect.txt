@@ -1,0 +1,26 @@
+1. What is a safe empty state? Could you define a safe empty state that differs from the empty state that you defined?
+- Safe empty state is the initialized states for the object's instance variables in a consturctor to ensure that the object has a well-defined state from the running time.
+Yes, I can define other state to be a safe empty state as long as they are inititalized in a consistent manner.
+2. Identify the parts of your source code where to minimized code duplication.
+- When I called the function which has the particular ability to do the task instead of making a new code.
+3. The canTravelWith(...) member function accesses the private data of the object referenced in its parameter. Explain why C++ allows this access.
+- The function is the member function of the object that referenced parameter belongs to.
+4. What statement did you add to ensure that the strncpy(...) function executes correctly?
+- I added passengerName[size - 1 -for me 18] = '\0'; after the strncpy function. The reason to do this is to ensure the null terminator is added at the end of an array.
+5. Explain what you have learned in this workshop.
+- I have learned how to use strncpy, fill and width to display well. And I have learned how to make a class and declare private data and public. I have learned a consturctor.
+
+Quiz 3 Reflection
+1. What is the purpose of using member functions?
+Wrong answer: It enables the external access to the class.
+Correct answer: It enables the external access to the object.
+3. What is the purpose of declaring data members as private?
+Wrong answer: It identifies all members listed in the class definition as inaccessible.
+Correct answer: If the data members of a class are private, client code cannot initialize their values directly.
+4. What is the purpose of declaring member functions as public?
+Wrong answer: It identifies all members listed in the class definition as accessible.
+Correct answer: The member functions of a class provide the communication links between client code and objects of the class.  
+5. Wrong answer: 3.2.$$$C++,707
+                       3.1.$$$xyz,10
+Correct answer: 3.2.3.1.$$$C++,707
+                    $$$xyz,10

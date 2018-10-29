@@ -1,0 +1,13 @@
+1. The operator+ returns a Fraction object. Explain why this operator should not return a reference to a Fraction object.
+- Because the result is calculated from the local variable inside the function. So, returning by refernce will be issued to go out of scope.
+2. List the temporary object in the w5_at_home.cpp main module.
+- (a+b), (b+d), (b+=d), (a==c), (a!=c)
+3. List the simplifications that you made to your class to minimize code duplication.
+- I use rhs, a, b, c, d etc. arguments to minimize my code.
+4. Explain what you have learned in this workshop.
+- I have learned how to overload operators and how to use them. 
+
+Quiz 4 Reflection
+4.a) Write down the function prototype that overloads the binary operator + as a member operator. The operator takes an amount of quantity as a parameter. It returns a reference to an Item project.
+Wrong answer: Item& operator+(const Item&);
+Correct answer: Item& operator+(int a);
