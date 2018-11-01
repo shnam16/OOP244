@@ -1,0 +1,6 @@
+1. Why does the copy assignment operator check for self-assignment before doing anything else?
+- If I don't check the self-assignment, delete statement could remove the resources and it will lead to loss of access to the source data.
+2. List examples of how you avoided code duplication.
+- I made a isValid function to validate phone numbers.
+3. List what you have learned in completing this workshop.
+- I have learned how to allocate and deallocate dynamic memory and how to work with resources.
