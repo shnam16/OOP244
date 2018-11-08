@@ -1,0 +1,30 @@
+1. Does the Hero class need to know about the existence of the SuperHero class? (Hint: search for "SuperHero" in Hero.cpp)
+- No, it does not need to know because SuperHero class is derived class and Hero class is based class, so based class has its own data.
+
+2. Does the SuperHero class need to know about the existence of the Hero class? (Hint: search for "Hero" in SuperHero.cpp)
+- Yes, it needs to know about the Hero class because SuperHero class is derived by Hero class which is based class.
+
+3. The program prints out "Ancient Battle!" when two Heroes fight. It prints out "Super Fight!" when two SuperHeroes fight. When you made a Hero fight a SuperHero, what did it print out?
+- It will print out "Ancient Battle!" because in this stage, the * operator is the one which is from the Hero class.
+
+4. True or False: is the follwing definition for main valid? Explain.
+int main() {
+     Hero("Achilles", 20, 6) * Hero("Hector", 30, 5);
+}
+- It's true. The Hero constructor will create each object and then the * operator will be run with Achilles and Hector.
+
+5. True or False: is the following definition for main valid? Explain.
+int main() {
+    (Hero("Achilles", 20, 6) * Hero("Hector", 30, 5)) * (Hero("Atalanta", 10, 3) * Hero("Hippolyta", 10, 2)); 
+}
+-It's true. Each Hero constructor will create each object. The operator * will be operated this order. Achilles*Hector, Atalanta*Hippolyta, and finally, (first winner * second winner).
+
+Quiz 6 Reflection
+
+1. Given a C++ class named Employee. Write down a line of code that invokes the copy constructor.
+Wrong answer: Employee::Employee(const Employee& source);
+Correct answer: Employe e1; e2 = e1;
+
+3. Given a C++ class named Storm. (Storm x;) a) Write down a line of code that invokes the ostream insertion operator.
+Wrong answer: std::ostream& operator<<(std::ostream& os, const Storm& x);
+Correct answer: cout << x;
