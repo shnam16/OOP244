@@ -1,0 +1,11 @@
+1. What is the difference between an abstract base class and a concrete class?
+- An abstract class is meant to be used as the base class from which other classes are derived. It defines an interface, but does not necessarily provide implementations for all its member functions. A derived class that implements all the missing functionality is called a concrete class. A concrete class is expected to provide implementations for the member functions that are not implemented in the base class.
+2. Identify the functions that shadow functions of the same name in your solution?
+- credit() and debit() function.
+3. Explain what have you learned in this workshop.
+- I have learned what the pure virtual function is and abstract class and a concrete class.
+
+Quiz 7 Reflection
+2. Give a real-life example of a base class and a derived class. You only need to write down the class names. However, you must indicate how the two classes are related.
+Wrong answer: Parent- base class, Child - derived class.
+Correct answer: Class_room - base class. Students - derived class.

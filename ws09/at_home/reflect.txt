@@ -1,0 +1,10 @@
+1. What happens if you try to put your templated functions in Data.cpp? Does your source code compile if you move all functions to Data.h? Explain.
+- No, it didn't compile when I tried to put the templated functions in Data.cpp. In ws9_lab.cpp file, it cannot find the identifier.
+2. Move one templated function into ws9_lab.cpp. Does it work now? Do you need to define the template function above main(), before it is used, or can you define it below main()?
+- If I moved the template function after the main(), it works.
+3. Could you have done this lab without templates, by just overloading your functions in Data.h to accept integer and double argouments? What is the advantage of using templates?
+- Yes, I could have done this lab without templates, however, as I used the templates, it reduce the repetition of code and it makes static polymorphism.
+4. Are the following equivalent?
+template<class T>
+template<typename T>
+- Yes, they are same because they are for identifying a type.
